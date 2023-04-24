@@ -5,7 +5,11 @@ spring:
   application:
     name: discoveryservice
 
+  cloud:
+    config:
+      uri: http://127.0.0.1:8889
+      name: service
 eureka:
   client:
-    register-with-eureka: false
-    fetch-registry: false
+    register-with-eureka: true
+    fetch-registry: true
